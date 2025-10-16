@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffafc;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  background: #fdd7e4;
+  padding: 50px;
+  border-bottom: 2px solid #d8b8c8;
+}
+
+/* FRAME FOTO */
+.photo-frame {
+  width: 210px;
+  transform: rotate(-5deg);
+  background: #ffe9f0;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  background: #a3a3a3;
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  transform: rotate(15deg);
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* INTRO */
+.intro {
+  flex: 2;
+  padding-left: 70px;
+}
+
+.hello-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.im {
+  font-size: 20px;
+  color: #c53064; /* pink seperti nama */
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.hello {
+  font-family: 'The Nautigal', cursive;
+  font-size: 90px;
+  color: #48b35a;
+  line-height: 1;
+}
+
+.name {
+  color: #c53064;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.desc {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.contact p {
+  color: #333;
+  margin-top: 5px;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 90px;
+}
+
+.left, .right {
+  width: 45%;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-family: 'Otomanopee One', sans-serif;
+  color: #c53064;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.software-title {
+  margin-top: 20px;
+}
+
+.left p {
+  line-height: 1.6;
+}
+
+.since {
+  margin-top: 6px;
+  color: black;
+  font-weight: 400; /* tidak bold */
+  position: relative;
+  left: 0;
+}
+
+/* SOFTWARE */
+.software-icons {
+  display: flex;
+  gap: 20px; /* jarak lebih dekat */
+  margin: 15px 0;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.canva {
+  background: #ff4081;
+  color: #fff;
+}
+
+.capcut {
+  background: #ffe596;
+  color: #333;
+}
+
+.lightroom {
+  background: #f5d3da;
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #fff0f5;
+  border: 1px solid #f2b3c0;
+  padding: 6px 12px;
+  border-radius: 15px;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+}
+
+/* LEARNING */
+.right ul {
+  list-style: none;
+}
+
+.right li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.tag {
+  background: #b4dfb1;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .left, .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro {
+    padding-left: 0;
+  }
+}
